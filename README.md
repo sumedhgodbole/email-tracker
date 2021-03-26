@@ -1,1 +1,1 @@
-# email-tracker
+# application_email_tracker
