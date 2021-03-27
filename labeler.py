@@ -6,22 +6,34 @@ Created on Tue Mar 23 16:35:07 2021
 @author: neo
 """
 
+import argparse
 from simplegmail import Gmail
 from simplegmail.query import construct_query
 
 import _pickle as cPickle
 
+# parsing arguments --------------------------------------------------------------------
+
+parser = argparse.ArgumentParser(description='Email Labeler')
+parser.add_argument("--older", default = 1, help = "emails other than the supplied number of days are scanned (default is 1)")
+parser.add_argument("--newer", default = 90, help = "emails newer than the supplied number of days are scanned (default is 90)")
+parser.add_argument("--cred", default = "credentials.json", help = "name of the gmail credentials file (default is 'credentials.json')")
+parser.add_argument("--label", default = "applications", help = "emails recognized as application receipts are categorized under this label in gmail")
+args = parser.parse_args()
+
+# print(args)
+
 # user-defined variables ----------------------------------------------------------------
 
-label_name = "applications"
-
-emails_older_than = 1 # days
-emails_newer_than = 10 #days
+label_name = args.label
+emails_older_than = args.older # days
+emails_newer_than = args.newer #days
+credentials_file = args.cred
 
 #----------------------------------------------------------------------------------------
 
 # initiate gmail API
-gmail = Gmail(client_secret_file = "gmail_credentials/credentials.json")
+gmail = Gmail(client_secret_file = "gmail_credentials/" + credentials_file)
 
 
 # get all labels in your gmail account 
@@ -80,6 +92,9 @@ for m in messages:
     if pred[0] == 1:
         # print(clf.predict_proba(features_test))
         m.add_label(application_label)
+        
+print("Labelling complete...........................................")
+
 exit()
     
     
