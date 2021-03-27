@@ -48,15 +48,19 @@ This can be done by running :
 ```SCSS
 conda create --name <env> --file requirements.txt
 ```
+Next, we need to create a label in Gmail. The same one we want to bundle all the application receipts under.
+
+If you already have a label you want to use, supply its name as an argument to the `labeler.py` file as shown below in the [Usage](#Usage) section.
+
+Now that we have the credentials for the Gmail API, the a label ready and waiting in Gmail, the environment set up with all the necessary libraries in it as well as the code we need run (that's kind of obvious :P go clone the repository if you haven't already!), we can begin labelling our emails.
+
 ### Usage
 
 ```SCSS
-python3 labeler.py --older 1 --newer 10 --cred 'credentials.json' 
+python3 labeler.py --older 1 --newer 10 --cred 'credentials.json' --label 'applications'
 ```
 
-#### Creating a Label in Gmail
 
-In case you want more information on what a label in Gmail is and the process of creating one, here are easy-to-follow instructions from [Google](https://support.google.com/mail/answer/118708?co=GENIE.Platform%3DDesktop&hl=en).
 
 ### Future Work
 
