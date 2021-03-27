@@ -16,7 +16,7 @@ import _pickle as cPickle
 
 parser = argparse.ArgumentParser(description='Email Labeler')
 parser.add_argument("--older", default = 1, help = "emails other than the supplied number of days are scanned (default is 1)")
-parser.add_argument("--newer", default = 90, help = "emails newer than the supplied number of days are scanned (default is 90)")
+parser.add_argument("--newer", default = 120, help = "emails newer than the supplied number of days are scanned (default is 90)")
 parser.add_argument("--cred", default = "credentials.json", help = "name of the gmail credentials file (default is 'credentials.json')")
 parser.add_argument("--label", default = "applications", help = "emails recognized as application receipts are categorized under this label in gmail")
 args = parser.parse_args()
