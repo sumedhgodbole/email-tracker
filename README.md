@@ -17,19 +17,26 @@ To activate the Gmail API [Click Here](https://developers.google.com/gmail/api/q
 Make sure you are logged in to the Gmail account you want to add the job applcation label for.
 Follow the instructions, leaving the defaults untouched, and as easy as 1 2 3, you will have enabled the Gmail API.
 
-What you wil need to do next, is to download the ** CREDENTIALS** file (json) this API provides you with. It should be named `credentials.json` by default. (Hurray if that's the case). You need to put this file under the `gmail_credentials/` folder in the directory. These credentials are private and unique to your Gmail Account (don't worry there is also token creation session in place), so *CAREFUL* who you trust it with.
+What you wil need to do next, is to download the ** CREDENTIALS** file (json) this API provides you with. It should be named `credentials.json` by default. (Hurray if that's the case). You need to put this file under the `gmail_credentials/` folder in the directory. These credentials are private and unique to your Gmail Account, so *CAREFUL* who you trust it with (don't worry too much cause there is also a token creation session in place :P).
 
-In case the file isn't called `credentials.json` you can either rename it to that or choose a name of your liking and supply the labeler with that name as shown in the [Instructions Section](#Using-the-labeler).
+In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Instructions Section](#Using-the-labeler).
 
 ### Installation
 
-We need the Gmail API to access our emails using Python Code. There is a stock Python wrapper from Google in stead of which I chose the more friendlier Simple Gmail API and I've got to say it lives up to its name.
+Now we need a Python wrapper for Gmail API, to be able to access our emails using Python Code. From the wide range wrappers available, I decided to go with a friendly little implementation called the `Simple Gmail API` and I've got to say it lives up to its name.
 
-For details on the `simplegmail` package [click here](https://pypi.org/project/simplegmail/)
+To read more about the `simplegmail` package [click here](https://pypi.org/project/simplegmail/)
+
+To install :
 
 ```SCSS
 pip3 install simplegmail
 ```
+This will install all the things you need to be able to run this code provided you are using a Python 3.7 environment like I did for this example.
+
+In case you want to get fancy and have a conda installation set up, use the `reuqirements.txt` provided in the repository to establish a conda environment identical to the one I used for this project.
+
+This can be done by running :
 ```SCSS
 conda create --name <env> --file requirements.txt
 ```
