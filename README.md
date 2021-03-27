@@ -11,7 +11,7 @@
 
 ### Motivation
 
-I am in the same boat as countless others right now. Hindered by COVID-19, we are all struggling to get hired. The number of applications one has to usually make just to get into an interview has nearly doubled tripled to the undeniably trying circumstances. To make sense of it all, the go-to option is maintain a list of all the positions that you have applied to. But with us applying to hundreds of positions on several job boards every month, keeping track of it all becomes a daunting task in itself.
+I am in the same boat as countless others right now. Hindered by COVID-19, we are all struggling to get hired. The number of applications one has to usually make just to get into an interview has nearly tripled to the undeniably trying circumstances. To make sense of it all, the go-to option is maintain a list of all the positions that you have applied to. But with us applying to hundreds of positions on several job boards every month, keeping track of it all becomes a daunting task in itself.
 
 One thing to note however, is that no matter the number of applications or the plaftorm used, there is always an **email receipt** of the position you have submitted an application for. Email Classification is a pretty common Machine Learning Algorithm with many beginner courses using the Spam vs Not Spam Classification as a staple. So theorectically, if you could obtain enough of these job application receipt emails, label them and then do some quick supervised learning upon it, you could potentially sort all the application emails under a single label. 
 
