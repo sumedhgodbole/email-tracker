@@ -2,6 +2,12 @@
 
 ### Contents
 
+* [Motivation](#Motivation)
+* [Prerequisites](#Prerequisites)
+* [Installation](#Installation)
+* [Usage](#Usage)
+          *[Creating a Label in Gmail](#Creating-a-Label-in-Gmail)   
+
 ### Motivation
 
 I am in the same boat as countless others right now. Hindered by COVID-19, we are all struggling to get hired. The number of applications one has to usually make just to get into an interview has nearly doubled tripled to the undeniably trying circumstances. To make sense of it all, the go-to option is maintain a list of all the positions that you have applied to. But with us applying to hundreds of positions on several job boards every month, keeping track of it all becomes a daunting task in itself.
@@ -19,9 +25,9 @@ To activate the Gmail API [Click Here](https://developers.google.com/gmail/api/q
 Make sure you are logged in to the Gmail account you want to add the job applcation label for.
 Follow the instructions, leaving the defaults untouched, and as easy as 1 2 3, you will have enabled the Gmail API.
 
-What you wil need to do next, is to download the ** CREDENTIALS** file (json) this API provides you with. It should be named `credentials.json` by default. (Hurray if that's the case). You need to put this file under the `gmail_credentials/` folder in the directory. These credentials are private and unique to your Gmail Account, so *CAREFUL* who you trust it with (don't worry too much cause there is also a token creation session in place :P).
+What you wil need to do next, is to download the ** CREDENTIALS** file (json) this API provides you with. It should be named `credentials.json` by default. (Hurray if that's the case). You need to put this file under the `gmail_credentials/` folder in the directory. These credentials are private and unique to your Gmail Account, so **CAREFUL** who you trust it with (don't worry too much cause there is also a gmail token creation session in place that needs you to login and assign permission to this API :P).
 
-In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Instructions Section](#Usage-Instructions).
+In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Usage](#Usage) section.
 
 ### Installation
 
@@ -42,9 +48,15 @@ This can be done by running :
 ```SCSS
 conda create --name <env> --file requirements.txt
 ```
-### Usage Instructions
+### Usage
 
-#### Create a Label in Gmail
+```SCSS
+python3 labeler.py --older 1 --newer 10 --cred 'credentials.json' 
+```
+
+#### Creating a Label in Gmail
+
+In case you want more information on what a label in Gmail is and the process of creating one, here are easy-to-follow instructions from [Google](https://support.google.com/mail/answer/118708?co=GENIE.Platform%3DDesktop&hl=en).
 
 ### Future Work
 
