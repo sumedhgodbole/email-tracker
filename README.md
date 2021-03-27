@@ -19,7 +19,7 @@ Follow the instructions, leaving the defaults untouched, and as easy as 1 2 3, y
 
 What you wil need to do next, is to download the ** CREDENTIALS** file (json) this API provides you with. It should be named `credentials.json` by default. (Hurray if that's the case). You need to put this file under the `gmail_credentials/` folder in the directory. These credentials are private and unique to your Gmail Account, so *CAREFUL* who you trust it with (don't worry too much cause there is also a token creation session in place :P).
 
-In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Instructions Section](#Using-the-labeler).
+In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Instructions Section](#Usage-Instructions).
 
 ### Installation
 
