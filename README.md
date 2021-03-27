@@ -1,5 +1,5 @@
 # application_email_tracker
-![theme image](https://github.com/sumedhgodbole/portfolio/blob/master/images/email_classification.png=600x)
+![theme image](https://github.com/sumedhgodbole/portfolio/blob/master/images/email_classification.png)
 ### Contents
 
 * [Motivation](#Motivation)
