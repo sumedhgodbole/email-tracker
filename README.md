@@ -4,9 +4,9 @@
 
 * [Motivation](#Motivation)
 * [Prerequisites](#Prerequisites)
-* [Installation](#Installation)
+* [Installation](#Installation)        
 * [Usage](#Usage)
-          *[Creating a Label in Gmail](#Creating-a-Label-in-Gmail)   
+    * [Creating a Label in Gmail](#Creating-a-Label-in-Gmail)
 
 ### Motivation
 
