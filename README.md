@@ -26,7 +26,7 @@ To activate the Gmail API [Click Here](https://developers.google.com/gmail/api/q
 Make sure you are logged in to the Gmail account you want to add the job applcation label for.
 Follow the instructions, leaving the defaults untouched, and as easy as 1 2 3, you will have enabled the Gmail API.
 
-What you wil need to do next, is to download the ** CREDENTIALS** file (json) this API provides you with. It should be named `credentials.json` by default. (Hurray if that's the case). You need to put this file under the `gmail_credentials/` folder in the directory. These credentials are private and unique to your Gmail Account, so **CAREFUL** who you trust it with (don't worry too much cause there is also a gmail token creation session in place that needs you to login and assign permission to this API :P).
+What you wil need to do next, is to download the **CREDENTIALS** file (json) this API provides you with. It should be named `credentials.json` by default. (Hurray if that's the case). You need to put this file under the `gmail_credentials/` folder in the directory. These credentials are private and unique to your Gmail Account, so **CAREFUL** who you trust it with (don't worry too much cause there is also a gmail token creation session in place that needs you to login and assign permission to this API :P).
 
 In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Usage](#Usage) section.
 
