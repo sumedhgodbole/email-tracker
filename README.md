@@ -1,9 +1,10 @@
 # application_email_tracker
 
+### Motivation
+
 ### Prerequisites
 
-
-Activate the Gmail API [here](https://developers.google.com/gmail/api/quickstart/python)
+Activate the Gmail API [Click Here](https://developers.google.com/gmail/api/quickstart/python)
 
 ### Installation
 
@@ -15,3 +16,10 @@ pip3 install simplegmail
 ```SCSS
 conda create --name <env> --file requirements.txt
 ```
+### Using the labeler
+
+#### Create a Label in Gmail
+
+### Future Work
+
+### Acknowledgements
