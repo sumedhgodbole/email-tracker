@@ -1,6 +1,6 @@
 # application_email_tracker
 
-![theme image](https://github.com/sumedhgodbole/portfolio/blob/master/images/email_classification_resized_300x300.jpeg)
+![theme image](https://github.com/sumedhgodbole/portfolio/blob/master/images/email_classification.png)
 
 ### Contents
 
