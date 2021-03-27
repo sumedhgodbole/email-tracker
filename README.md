@@ -30,7 +30,7 @@ What you wil need to do next, is to download the ** CREDENTIALS** file (json) th
 
 In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Usage](#Usage) section.
 
-We also need to create a label in Gmail [Tutorial](https://support.google.com/mail/answer/118708?co=GENIE.Platform%3DDesktop&hl=en). The same one we want to bundle all the application receipts under.
+We also need to create a label in Gmail [Tutorial Here](https://support.google.com/mail/answer/118708?co=GENIE.Platform%3DDesktop&hl=en). The same one we want to bundle all the application receipts under.
 
 If you already have a label you want to use, supply its name as an argument to the `labeler.py` file as shown below in the [Usage](#Usage) section.
 
@@ -84,4 +84,5 @@ And its done! Go check your inbox..
 - trigerring a summary email that gives you a list of all the positions you recently applied to 
 
 ### Acknowledgements
+
 
