@@ -85,4 +85,7 @@ And its done! Go check your inbox..
 
 ### Acknowledgements
 
+- A huge thank you to the creators of [simplegmail](https://pypi.org/project/simplegmail/) 
+- Many thanks to [MahnoorJaved98](https://github.com/MahnoorJaved98) for providing awesome details on [Email-Classification](https://towardsdatascience.com/the-best-machine-learning-algorithm-for-email-classification-39888e7b1846) using `sklearn`.
+- Thanks to my friends [Varun Jammula](https://github.com/varunjammula), [Sagar Shah](https://github.com/shahsagar) and [Omkar Kulkarni](https://github.com/Omkar21) for lending me access to their emails and bravely agreeging to share a part of their job-hunting struggles with me :P
 
