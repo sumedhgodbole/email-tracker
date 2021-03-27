@@ -84,6 +84,7 @@ And its done! Go check your inbox..
 - adding a function that allows all the emails under this label to be exported as a `.csv` file
 - introduce a scheduler that allows`labeler.py` to run automatically at predefined intervals
 - trigerring a summary email that gives you a list of all the positions you recently applied to 
+- currently at approximately 97% accuracy, with more data collected in the future, we hope to make this model better
 
 ### Acknowledgements
 
