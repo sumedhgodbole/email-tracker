@@ -6,7 +6,8 @@
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)        
 * [Usage](#Usage)
-    * [Creating a Label in Gmail](#Creating-a-Label-in-Gmail)
+* [Future Work](#Future-Work)
+* [Acknowledgments](#Acknowledgments)
 
 ### Motivation
 
@@ -29,6 +30,12 @@ What you wil need to do next, is to download the ** CREDENTIALS** file (json) th
 
 In case the file isn't called `credentials.json` you can either rename it to that, or choose a name of your liking and supply the labeler with that name as shown in the [Usage](#Usage) section.
 
+We also need to create a label in Gmail [Tutorial](https://support.google.com/mail/answer/118708?co=GENIE.Platform%3DDesktop&hl=en). The same one we want to bundle all the application receipts under.
+
+If you already have a label you want to use, supply its name as an argument to the `labeler.py` file as shown below in the [Usage](#Usage) section.
+
+Now that we have the credentials for the Gmail API, the a label ready and waiting in Gmail, the environment set up with all the necessary libraries in it as well as the code we need run (that's kinda obvious :P . . .  clone the repository if you haven't already!), we can finally begin labelling our emails.
+
 ### Installation
 
 Now we need a Python wrapper for Gmail API, to be able to access our emails using Python Code. From the wide range wrappers available, I decided to go with a friendly little implementation called the `Simple Gmail API` and I've got to say it lives up to its name.
@@ -48,20 +55,33 @@ This can be done by running :
 ```SCSS
 conda create --name <env> --file requirements.txt
 ```
-Next, we need to create a label in Gmail. The same one we want to bundle all the application receipts under.
-
-If you already have a label you want to use, supply its name as an argument to the `labeler.py` file as shown below in the [Usage](#Usage) section.
-
-Now that we have the credentials for the Gmail API, the a label ready and waiting in Gmail, the environment set up with all the necessary libraries in it as well as the code we need run (that's kind of obvious :P go clone the repository if you haven't already!), we can begin labelling our emails.
 
 ### Usage
+
+Right then! With a terminal open in the same directory, run the following :
 
 ```SCSS
 python3 labeler.py --older 1 --newer 10 --cred 'credentials.json' --label 'applications'
 ```
+the arguments work as explained below :
 
+- **--older** the emails you scan are older than the specified number of **days** (default value 1)
+- **--newer** the emails you scan are older than the specified number of **days** (default value 100)
+- **--cred** the name of your credentials file inside the `gmail_credentials/` folder (default value is 'credentials.json')
+- **--label** the label from your Gmail that you want to assign to mails that are identified as job application receipts (default value is 'applications')
 
+Only for the first time this script runs, there will be a pop-up window that asks you to autheticate the API and to assign it the right permissions. This only happens the first time you run the script to generate a `gmail_token.json` file. You might need to re-run the script (```Ctrl + C``` to terminate the current execution) once you see the **Authentication successful** text inside the terminal.
+
+What this file does, is it loads a [Decision Tree Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) which has already been trained using a total of about 1600 samples. Some other models namely, `the vectorizer` and the `feature selector` to preprocess the email content to be ready for some ML Magic.  Its as easy as that! We collect a bunch of emails that match our search criteria, process the subject of the email and put it through the Classifier. If the classifier thinks its a job application receipt, we label that email accordingly, all using the Python Code! 
+
+And its done! Go check your inbox..
 
 ### Future Work
 
+- incorporating the body of the email (in additiion to simply the subject line) for making the predictions
+- adding a function that allows all the emails under this label to be exported as a `.csv` file
+- introduce a scheduler that allows`labeler.py` to run automatically at predefined intervals
+- trigerring a summary email that gives you a list of all the positions you recently applied to 
+
 ### Acknowledgements
+
