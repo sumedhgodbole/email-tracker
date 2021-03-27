@@ -1,0 +1,4 @@
+# ADD YOUR CREDENTIALS FILE DOWNLOADED FROM GMAIL API TO THIS FOLDER
+
+ - rename is to 'credentials.json' for automatic loading
+ - if the name is different, pass it as an argument to the labeler.py file with the --cred option
