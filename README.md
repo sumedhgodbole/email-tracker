@@ -36,7 +36,7 @@ We also need to create a label in Gmail [Tutorial Here](https://support.google.c
 
 If you already have a label you want to use, supply its name as an argument to the `labeler.py` file as shown below in the [Usage](#Usage) section.
 
-Now that we have the credentials for the Gmail API, the a label ready and waiting in Gmail, the environment set up with all the necessary libraries in it as well as the code we need run (that's kinda obvious :P . . .  clone the repository if you haven't already!), we can finally begin labelling our emails.
+Now that we have the credentials for the Gmail API, the a label ready and waiting in Gmail, the environment set up with all the necessary libraries in it as well as the code we need to run (that's kinda obvious :P . . .  clone the repository if you haven't already!), we can finally begin labelling our emails.
 
 ### Installation
 
