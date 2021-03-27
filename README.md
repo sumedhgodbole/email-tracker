@@ -11,7 +11,9 @@ As a fun little weekend project that would slightly lessen my job hunting woes, 
 ### Prerequisites
 
 To start off, you'll need to enable the Gmail API for your Gmail account.
+
 To activate the Gmail API [Click Here](https://developers.google.com/gmail/api/quickstart/python)
+
 Make sure you are logged in to the Gmail account you want to add the job applcation label for.
 Follow the instructions, leaving the defaults untouched, and as easy as 1 2 3, you will have enabled the Gmail API.
 
@@ -31,7 +33,7 @@ pip3 install simplegmail
 ```SCSS
 conda create --name <env> --file requirements.txt
 ```
-### Using the labeler
+### Usage Instructions
 
 #### Create a Label in Gmail
 
