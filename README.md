@@ -1,4 +1,4 @@
-## application_email_tracker
+# application_email_tracker
 
 ### Contents
 
