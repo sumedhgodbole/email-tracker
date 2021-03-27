@@ -7,7 +7,7 @@
 * [Installation](#Installation)        
 * [Usage](#Usage)
 * [Future Work](#Future-Work)
-* [Acknowledgments](#Acknowledgments)
+* [Acknowledgements](#Acknowledgements)
 
 ### Motivation
 
